@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/favicon.ico">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+
+    <header>
+        <a href="#"></a>
+            <img src="./imagenes/logo.svg" alt="logo alura" class="logo">
+    </header>
+
+    <main>
+        
+        <section class="encriptador">
+            <textarea class="encriptar" placeholder="Ingresa el texto acá"></textarea>
+
+            <div class="encriptadorAviso">
+                <img src="./imagenes/aviso.svg" alt="Imagen de Aviso" class="imagenAviso">
+                <p class="textoAviso"> Ingrese sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="encriptadorContainer">
+                <button type="submit" class="btnEncriptar">Encriptar</button>
+                <button type="submit" class="btnDesencriptar">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <div class="cardContainer">
+                <img src="./imagenes/enigma.png" alt="Imagen de enigma" class="imagenEnigma">
+                    <p class="textoCard1">Ningún mensaje fue encontrado</p>
+                    <p class="textoCard2">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar"></textarea>
+            <button type="submit" class="btnCopiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p class="desarrollado">Desarrollado por NachtDev - Colombia 2024</p>
+    </footer>
+
+    <script src="./js/enctiptador.js"></script>
+</body>
+</html>
