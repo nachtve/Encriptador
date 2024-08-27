@@ -1,26 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-:root {
-    --font: #538392;
-    --back: #f4eafd;
-    --gris: #C5C5C5;
-    --darkBlue: #0A3871;  
-    --medioGris: #67808E;
-    --rgba: #000000;
-    --lightBlue: #D8DFE8;
-    --gree: #495057;
-    --white: #FFFFFF;
+
+:root{
+    --Font:#E5E5E5;
+    --White:#FFFFFF;
+    --Dark-Blue:#0A3871;
+    --Greey:#C5C5C5;
+    --Medium-Gray:#67808E;
+    --RGBA:rgba(0,0,0,0.08);
+    --White-Blue:#D8DFE8;
+    --Medium-Blue:#0a38718a;
+    --Gray:#343A40;
+    --Gree:#495057;
+    --Noir: #000000;
+    --Orange: #E85C0D;
 }
 
 *{
-    margin: 0%;
-    padding: auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
-    background-color: var(--back);
-
+    background: var(--White);
 }
+
 
 body{
     height: 100%;
@@ -30,11 +34,13 @@ img{
     max-width: 100%;
 }
 
+
 header{
+    position: absolute;
     margin: 40px 0px 0px 40px;
 }
 
-.logo{
+header .logo{
     display: flex;
     align-items: flex-start;
     width: 120px;
@@ -48,48 +54,46 @@ main{
     background-position: center;
 }
 
-.encriptador {
+.encriptador{
     width: 60%;
     margin: 168px 0px 0px 140px;
     background: transparent;
-  
 }
 
 .encriptar{
     width: 660px;
-    height: 228px;
+    height: 288px;
     font-weight: 400;
     font-size: 32px;
     line-height: 48px;
-    border: 1px solid var(--rgba);
-    background: var(--lightBlue);
+    outline: none;
+    border: 2px solid var(--Noir);
     border-radius: 15px;
+    resize: none;
     text-align: center;
-    
-
-
+    justify-content: center;
+    background-color: var(--Font);
 }
+
 
 .encriptadorAviso{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0%;
+    padding: 0;
     gap: 8px;
     position: absolute;
     top: 500px;
-
 }
 
 .textoAviso{
     width: 100%;
     font-style: normal;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 150%;
     opacity: 0.8;
-    color: var(--medioGris);
-    background: none;
+    color: var(--Medium-Gray);
 }
 
 .encriptadorContainer{
@@ -105,109 +109,111 @@ main{
     width: 328px;
     height: 67px;
     padding: 24px;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: var(--white);
-    background: var(--darkBlue);
-    border: 1px solid var(--rgba);
+    color: var(--White);
+    background: var(--Dark-Blue);
+    border: 1px solid var(--Dark-Blue);
     border-radius: 24px;
     cursor: pointer;
-
+     
 }
 
 .btnEncriptar:hover{
-    background-color: var(--font);
-    transform: scale(0.95);
+   
+    background: var(--Medium-Gray);
 }
 
 .btnDesencriptar{
     width: 328px;
     height: 67px;
-    color: var(--back);
     padding: 24px;
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: var(--rgba);
-    background: var(--lightBlue);
-    border: 1px solid var(--rgba);
+    color: var(--Dark-Blue);
+    background: var(--White-Blue);
+    border: 1px solid var(--Dark-Blue);
     border-radius: 24px;
     cursor: pointer;
-
-
+    
 }
 
+
 .btnDesencriptar:hover{
-    background-color: var(--medioGris);
-    color: var(--back);
-    transform: scale(0.95);
+   
+    background: var(--Medium-Blue);
+    color: var(--White);
 }
 
 .card{
-    width: 290px;
-    height: 588px;
-    background: var(--lightBlue);
+    width: 270px;
+    height: 580px;
+    border: 0.5px solid var(--Noir);
+    background: var(--Font);
     position: relative;
-    border: 1.5px solid var(--rgba);
-    border-radius: 32px;
+    margin-top: 40px;
+    border-radius: 20px;
     text-align: center;
+
     
 }
 
 .cardContainer{
-    width: 290x;
-    margin: 29px;
+    width: 250px;
+    margin: auto;
     margin-top: 50%;
-    background: var(--back);
+    background: var(--Font);
 }
 
-.imagenEnigma {
-    background: var(--lightBlue);
-    
+.imagenEnigma{
+    background: var(--Font);
 }
 
 .textoCard1{
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
+    line-height: 120%;
     text-align: center;
-    color: var(--rgba);
-    background: var(--lightBlue);
+    color: var(--Gray);
+    background: var(--Font);
 }
 
 .textoCard2{
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 150%;
     text-align: center;
-    color: var(--rgba);
-    background: var(--lightBlue);
-    border: none;
+    color: var(--Medium-Gray);
+    background: var(--Font);
 }
 
-.evaluar {
+.evaluar{
     width: 100%;
     height: 485px;
-    position:relative; 
+    position: absolute;
     padding: 20px;
     top: 0;
     left: 0;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: var(--gree);
+    color: var(--Gree);
     background: transparent;
     border-top-right-radius: 32px;
     border-top-left-radius: 32px;
     border: none;
     resize: none;
-    
 }
 
-.evaluar:focus {
+.evaluar:focus{
     outline: none;
 }
 
@@ -215,7 +221,7 @@ main{
     width: 224px;
     height: 67px;
     margin: 23px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
@@ -223,45 +229,42 @@ main{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    background: var(--lightBlue);
-    border: 1px solid var(--rgba);
+    background: var(--White-Blue);
+    border: 1px solid var(--Dark-Blue);
     border-radius: 20px;
     cursor: pointer;
 }
 
-.btnCopiar:hover {
-    background-color: var(--medioGris);
-    color: var(--back);
-    transform: scale(0.95);
-}
 
 footer{
-    margin-top: 15px;
+    margin-top: 18px;
     padding: 10px;
-    border-top: 2px solid var(--darkBlue);
-    
-    color: var(--darkBlue);
+    border-top: 1px dotted var(--Noir);
     text-align: center;
     height: 5px;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 600;
-    color: var(--darkBlue);
+    color: var(--Orange);
+    
 }
 
-@media(max-width: 1250px) {
+
+@media(max-width: 1250px){
     main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; }
-        
+        width: 100%;
+    }
+
     .encriptador{
         margin: 168px 0px 0px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%; }
-    
+        width: 100%;
+    }
+
     .encriptadorContainer{
         display: flex;
         align-items: center;
@@ -271,30 +274,34 @@ footer{
     .encriptadorAviso{
         position: inherit;
         margin: 15px;
-    }
-
+    }   
+    
     .card{
-        width: 445px;
-        height: 180px;
+        width: 665px;
+        height: 300px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
     }
 
     .cardContainer{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    bottom: 20%;
-    font-size: 24px;
-    font-weight: 600;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
     }
 
-    .btnCopiar {
-        position: relative;
-        width: 50%;
+    .imagenEnigma{
+        display: none;
+    }
+
+    .btnCopiar{
+        position: inherit;
+        width: 100%;
     }
 
     .evaluar{
@@ -303,29 +310,21 @@ footer{
         padding: 10px;
     }
 
-
-    .imagenEnigma {
-        display: none;
+    .desarrollado{
+        font-size: 20px;
     }
 }
 
-@media(max-width: 720px) {
-
-    .logo{
-        display: flex;
-        align-items: flex-start;
-        width: 120px;
-        height: 48px;
-    }
-
+@media(max-width: 720px){
+    
     header .logo{
         width: 100%;
-        background: var(--darkBlue);
+        background: var(--White);
         padding: 2px;
     }
 
-    .encriptar {
-        width: 90%;
+    .encriptar{
+        width:  90%;
         font-size: 24px;
     }
 
@@ -336,10 +335,10 @@ footer{
 
     .card{
         width: 90%;
-     }
-
+    }
+    
     .desarrollado{
         font-size: 20px;
     }
+  
 }
-
